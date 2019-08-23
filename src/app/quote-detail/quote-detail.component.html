@@ -1,4 +1,6 @@
 <p>
-    {{quote.description}}
+    Author: {{quote.author}} <br>
+    Posted by  {{quote.posted}} <br>
+    Was posted on {{quote.completeDate|date}}
   </p>
   <button (click)= 'quoteComplete(true)'>Complete</button>
