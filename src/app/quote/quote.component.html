@@ -5,13 +5,17 @@
     <div class="col-md-6">
   <div *ngFor='let quote of quotes;let i = index'>
     <div>
-    <h6>{{quote.quotation}} <br></h6>
+    <p id={{i}}>{{quote.quotation}}<br></p>
     <button (click)='toggleDetails(i)' class="btn btn-primary">Details</button>
   </div>
   <div *ngIf='quote.showDescription'>
     <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
   </div>
   </div>
+</div>
+
+<div class="col-md-6">
+    <app-quote-form></app-quote-form>
 </div>
 </div>
 <p *ngIf='quotes.length > 5'>We have lot of quotes today</p>
