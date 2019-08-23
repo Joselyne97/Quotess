@@ -3,4 +3,6 @@
     Posted by  {{quote.posted}} <br>
     Was posted on {{quote.completeDate|date}}
   </p>
-  <button (click)= 'quoteComplete(true)'>Complete</button>
+  <p>This quote was uploaded in {{quote.completeDate|dateCount}} days ago</p>
+  
+  <button (click)= 'quoteDelete(true)'>Delete the Quote</button>
