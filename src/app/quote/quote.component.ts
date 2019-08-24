@@ -17,6 +17,14 @@ export class QuoteComponent implements OnInit {
     toggleDetails(index){
       this.quotes[index].showDescription = !this.quotes[index].showDescription;
     }
+    // likeQuote(isLike){
+    //   if(isLike){
+    //     let count=0;
+    //     count= count + 1;
+    //   }
+    
+    // }
+
 
     deleteQuote(isComplete, index){
       if (isComplete) {

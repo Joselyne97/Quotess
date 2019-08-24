@@ -1,8 +1,13 @@
+
 <p>
     Author: {{quote.author}} <br>
     Posted by  {{quote.posted}} <br>
     Was posted on {{quote.completeDate|date}}
   </p>
-  <p>This quote was uploaded in {{quote.completeDate|dateCount}} days ago</p>
   
+  <p><app-vote></app-vote></p>
+  
+  <p>This quote was uploaded in {{quote.completeDate|dateCount}} days ago</p><br>
+
+
   <button (click)= 'quoteDelete(true)'class="btn btn-outline-danger">Delete the Quote</button>
