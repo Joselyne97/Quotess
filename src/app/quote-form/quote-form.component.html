@@ -1,31 +1,31 @@
 <div class="container-fluid">
         <h2 class="text-center">Post your favorite Quote</h2>
         <hr>
-        <form #quoteForm='ngForm'>
+        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
             <div class="form-group">
-      
-                <label for="textquote">The quote</label>
-                <input type="text" class="form-control" id="textquote" [(ngModel)]="newQuote.quotation" quotation="textquote" #textquote='ngModel' required>
+
+                <label for="quotation">The quote</label>
+                <input type="text" class="form-control" id="quotation" [(ngModel)]="newQuote.quotation" name="quotation" #quotation="ngModel" required>
                 <div [hidden]="quotation.valid || quotation.pristine" class="alert alert-danger">
-                    <p>input the Quote please!</p>
+                    <p>Write the Quote please!</p>
                 </div>
-      
+
             </div>
             <div class="form-group">
-      
+
                 <label for="author">Author's Name</label>
-                <input type="text" class="form-control" id="author" placeholder="for example James P." [(ngModel)]="newQuote.author" author="author" #author='ngModel' required>
-                
+                <input type="text" class="form-control" id="author" placeholder="for example James P." [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
+
                 <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
                         <p>The Author's name is required please!</p>
                     </div>
             </div>
 
             <div class="form-group">
-      
+
                     <label for="posted">Posted by: </label>
-                    <input type="text" class="form-control" id="posted" placeholder="Write your Name" [(ngModel)]="newQuote.posted" posted="posted" #posted='ngModel' required>
-                    
+                    <input type="text" class="form-control" id="posted" placeholder="Write your Name" [(ngModel)]="newQuote.posted" name="posted" #posted="ngModel" required>
+
                     <div [hidden]="posted.valid || posted.pristine" class="alert alert-danger">
                             <p>Your name is required please!</p>
                         </div>
@@ -33,9 +33,9 @@
 
             <div class="form-group">
                 <label for="complete">Posted Date</label>
-      
-                <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" #completeDate="ngModel" required>
-      
+
+                <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" #completeDate="ngModel" name="completeDate" required>
+
                 <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
                         <p>Date is required</p>
                       </div>
