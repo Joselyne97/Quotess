@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { Quote } from '../quote';
 @Component({
   selector: 'app-vote',
@@ -6,6 +6,7 @@ import { Quote } from '../quote';
   styleUrls: ['./vote.component.css']
 })
 export class VoteComponent implements OnInit {
+  @Input() quote:Quote;
 liked=0;
 disliked=0;
 highVote=5;
@@ -17,6 +18,7 @@ like(){
 dislike(){
   this.disliked=this.disliked+1
 }
+
   constructor() { }
 
   ngOnInit() {
