@@ -20,12 +20,15 @@ Joselyne MPAYIMANA
 
  ## Technology used:
 
- Angular js
+ 1. Angular js
+ 2. Node js
+ 3. Html
+ 4. Typescript
 
  
  ## The link to live site on GitHub Pages is :
  
-..................
+ https://joselyne97.github.io/Quotess/
 
  ## Copyright and license information:
 
