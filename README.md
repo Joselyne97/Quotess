@@ -28,7 +28,7 @@ Joselyne MPAYIMANA
  
  ## The link to live site on GitHub Pages is :
  
-               https://joselyne97.github.io/Quotess/
+ https://joselyne97.github.io/Quotess/
 
  ## Copyright and license information:
 
