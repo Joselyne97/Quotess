@@ -1,27 +1,33 @@
-# Quotess
+## Project name:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+Quote application
 
-## Development server
+## Author:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Joselyne MPAYIMANA
 
-## Code scaffolding
+## Contact information:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Tel: (250)787753215;
+2. Email: joselynejojo740@gmail.com;
+3. Facebook: Joselyne M.JOJO;
+4. LinkedIn: Joselyne MPAYIMANA;
 
-## Build
+## Project description:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+ We were required to create an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. 
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ ## Technology used:
 
-## Running end-to-end tests
+ Angular js
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+ 
+ ## The link to live site on GitHub Pages is :
+ 
+..................
 
-## Further help
+ ## Copyright and license information:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ &#9400; Made in August.2019, by Jo
+

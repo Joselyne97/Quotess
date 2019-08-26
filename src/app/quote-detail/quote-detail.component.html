@@ -1,13 +1,17 @@
 
-<p>
+<p style="color: white;
+background-color:black">
     Author: {{quote.author}} <br>
     Posted by  {{quote.posted}} <br>
     Was posted on {{quote.completeDate|date}}
+    
   </p>
   
-  <p><app-vote></app-vote></p>
-  
-  <p>This quote was uploaded in {{quote.completeDate|dateCount}} days ago</p><br>
+  <p style="color: white;
+  background-color:black"><app-vote></app-vote></p>
+
+  <p style="color: white;
+  background-color:black">This quote was uploaded in {{quote.completeDate|dateCount}} days ago</p><br>
 
 
   <button (click)= 'quoteDelete(true)'class="btn btn-outline-danger">Delete the Quote</button>

@@ -1,43 +1,55 @@
-<div class="container-fluid">
+<div class="container-fluid" style="color: white;
+background-color:black;">
         <h2 class="text-center">Post your favorite Quote</h2>
         <hr>
         <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
             <div class="form-group">
 
-                <label for="quotation">The quote</label>
-                <input type="text" class="form-control" id="quotation" [(ngModel)]="newQuote.quotation" name="quotation" #quotation="ngModel" required>
+                <label style="color: white;
+                background-color:black" for="quotation">The quote</label>
+                <input style="color: white;
+                background-color:black" type="text" class="form-control" id="quotation" [(ngModel)]="newQuote.quotation" name="quotation" #quotation="ngModel" required>
                 <div [hidden]="quotation.valid || quotation.pristine" class="alert alert-danger">
-                    <p>Write the Quote please!</p>
+                    <p style="color: white;
+                    background-color:black;">Write the Quote please!</p>
                 </div>
 
             </div>
             <div class="form-group">
 
-                <label for="author">Author's Name</label>
-                <input type="text" class="form-control" id="author" placeholder="for example James P." [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
+                <label  style="color: white;
+                background-color:black;" for="author">Author's Name</label>
+                <input style="color: white;
+                background-color:rgb(0,0,0,0);" type="text" class="form-control" id="author" placeholder="for example James P." [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
 
                 <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-                        <p>The Author's name is required please!</p>
+                        <p style="color: white;
+                        background-color:black;">The Author's name is required please!</p>
                     </div>
             </div>
 
             <div class="form-group">
 
-                    <label for="posted">Posted by: </label>
-                    <input type="text" class="form-control" id="posted" placeholder="Write your Name" [(ngModel)]="newQuote.posted" name="posted" #posted="ngModel" required>
+                    <label style="color: white;
+                    background-color:black;" for="posted">Posted by: </label>
+                    <input type="text" style="color: white;
+                    background-color:rgb(0,0,0,0);"  class="form-control" id="posted" placeholder="Write your Name" [(ngModel)]="newQuote.posted" name="posted" #posted="ngModel" required>
 
                     <div [hidden]="posted.valid || posted.pristine" class="alert alert-danger">
-                            <p>Your name is required please!</p>
+                            <p style="color: white;
+                            background-color:black;">Your name is required please!</p>
                         </div>
                 </div>
 
             <div class="form-group">
                 <label for="complete">Posted Date</label>
 
-                <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" #completeDate="ngModel" name="completeDate" required>
+                <input style="color: white;
+                background-color:rgb(0,0,0,0);" type='date' id="complete" [(ngModel)]="newQuote.completeDate" #completeDate="ngModel" name="completeDate" required>
 
                 <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
-                        <p>Date is required</p>
+                        <p style="color: white;
+                        background-color:black;">Date is required</p>
                       </div>
             </div>
             <button type="submit" class="btn btn-success">Add a Quote</button>
