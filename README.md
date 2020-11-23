@@ -15,7 +15,7 @@ Joselyne MPAYIMANA
 
 ## Project description:
 
- We were required to create an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. 
+ This is an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. 
 
 
  ## Technology used:
